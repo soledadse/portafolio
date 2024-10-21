@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js"></script>
+    <title>Jesus Huancas</title>
+</head>
+<body>
+    <header class="header">
+    <nav class="nav-bar">
+        <div class="logo">Mi Portafolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Aquí comienza el wrapper que Barba.js necesita -->
+    <main id="barba-wrapper">
+        <div class="barba-container">
+            <section id="home" class="hero">
+                <canvas id="bgCanvas"></canvas>
+                <div class="hero-content">
+                    <h1>Hola, soy <span class="highlight">Jesus Huancas</span></h1>
+                    <p>Creo experiencias digitales con <span class="highlight">impacto</span></p>
+                    <a href="#projects" class="cta-button">Ver mis proyectos</a>
+                </div>
+            </section>
+            <section id="about" class="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="https://pics.paypal.com/00/s/MjAwWDIwMFhQTkc/p/OGY2NjZiNWQtMTRiMC00Y2Y3LTg4YTYtZWI0OWYwYjU1MzNi/image_58.jpg" alt="Imagen de Jesús Huancas">
+        </div>
+        <div class="about-content">
+            <h2>Sobre mí</h2>
+            <p>Soy un profesional con formación en Computación e Informática, especializado en el desarrollo de sistemas web, de escritorio y aplicaciones móviles. A lo largo de mi carrera, he adquirido una experiencia sólida en el diseño y administración de bases de datos, desarrollando soluciones innovadoras y eficientes para diferentes necesidades empresariales.</p>
+            <div class="about-highlights">
+                <div class="highlight">
+                    <i class="fas fa-user-shield"></i>
+                    <p>Seguridad de aplicaciones: autenticación, criptografía e ingeniería inversa.</p>
+                </div>
+                <div class="highlight">
+                    <i class="fas fa-users-cog"></i>
+                    <p>Capacidad de adaptación y habilidad para coordinar equipos de trabajo.</p>
+                </div>
+                <div class="highlight">
+                    <i class="fas fa-bullseye"></i>
+                    <p>Compromiso con el éxito de cada proyecto y enfoque en los objetivos establecidos.</p>
+                </div>
+            </div>
+            <p>Mi objetivo es seguir desarrollándome en el área de tecnología, contribuyendo con mis habilidades técnicas y personales al éxito de la empresa, generando un impacto positivo a través de soluciones creativas y efectivas.</p>
+        </div>
+    </div>
+</section>
+            <section id="projects" class="projects">
+                <h2>Proyectos</h2>
+                <div class="project-gallery">
+                    <div class="project-card">
+                        <img src="img/1.PNG" alt="Proyecto 1">
+                        <div class="overlay">
+                            <h3>Sistema Courier</h3>
+                            <p>sistema para el tracking de paquetería e importacion</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/3.PNG" alt="Proyecto 2">
+                        <div class="overlay">
+                            <h3>Pagina web</h3>
+                            <p>Diseño de pagina web.</p>
+                        </div>
+                    </div>
+					<div class="project-card">
+                        <img src="img/taxi.PNG" alt="Proyecto 1">
+                        <div class="overlay">
+                            <h3>Sistema de Taxi</h3>
+                            <p>Ssistema web y aplicacion para taxi</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/ot.PNG" alt="Proyecto 2">
+                        <div class="overlay">
+                            <h3>Sistema electrico</h3>
+                            <p>Sistema para el control de inverntarios de una empresa electrica</p>
+                        </div>
+                    </div>
+					
+                </div>
+            </section>
+            <section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <form class="contact-form" method="post">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Tu email" required>
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Tu mensaje" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Enviar</button>
+    </form>
+</section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Hecho con ❤️ por Jesus</p>
+    </footer>
+</body>
+</html>
